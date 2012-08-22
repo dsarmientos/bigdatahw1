@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="/css/rss20.xsl" type="text/xsl"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0" xmlns:pheedo="http://www.pheedo.com/namespace/pheedo">
+	<channel>
+		<title>NYT &gt; Technology</title>
+		<link>http://www.nytimes.com/pages/technology/index.html?partner=rss&amp;emc=rss</link>
+		<description>Technology</description>
+		<language>en-us</language>
+		<copyright>Copyright 2012 The New York Times Company</copyright>
+		<pubDate>Mon, 20 Aug 2012 22:30:26 GMT</pubDate>
+		<lastBuildDate>Mon, 20 Aug 2012 22:30:26 GMT</lastBuildDate>
+		<ttl>2</ttl>
+		<image>
+			<title>NYT &gt; Technology</title>
+			<url>http://graphics8.nytimes.com/images/misc/NYT_logo_rss_250x40.png</url>
+			<link>http://www.nytimes.com/pages/technology/index.html?partner=rss&amp;emc=rss</link>
+		</image>
+		<atom:link rel="hub" href="http://www.pheedo.com/api/hub/"/>
+		<atom:link rel="self" href="http://feeds.nytimes.com/nyt/rss/Technology" type="application/rss+xml"/>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/20/technology/discovery-invests-in-digital-textbooks-in-hopes-of-growth.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Discovery Invests in Digital Textbooks in Hopes of Growth</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=222787d681e66edbd1fdaf584add3e2a</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/20/technology/discovery-invests-in-digital-textbooks-in-hopes-of-growth.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Under pressure to expand, media companies are capitalizing on the changes that technology is bringing to classrooms.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/22880f6f/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=222787d681e66edbd1fdaf584add3e2a&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=222787d681e66edbd1fdaf584add3e2a&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Google Inc|GOOG|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Discovery Channel</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Pearson PLC|PSO|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">News Corporation|NWSA|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Discovery Holding Company|DISCA|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Media</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Walt Disney Company|DIS|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Education (K-12)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Apple Inc|AAPL|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">McGraw-Hill Companies Inc|MHP|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Computers and the Internet</category>
+			<pubDate>Mon, 20 Aug 2012 22:23:11 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/20/technology/discovery-invests-in-digital-textbooks-in-hopes-of-growth.html</guid>
+			<dc:creator>By BROOKS BARNES and AMY CHOZICK</dc:creator>
+			<media:credit scheme="urn:ebu">Chris Keane for The New York Times</media:credit>
+			<media:description>Last year, Discovery introduced its line of digital textbooks, called Techbooks. The manuals are used at Mooresville Middle School in North Carolina.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/20/business/EDUCATION/EDUCATION-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/18/technology/merchants-and-shoppers-sour-on-daily-deal-sites-like-groupon.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Merchants and Shoppers Sour on Daily Deal Sites Like Groupon</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=a581fa08ebdb4535643213d1d5dda9f5</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/18/technology/merchants-and-shoppers-sour-on-daily-deal-sites-like-groupon.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>After an initial flush of enthusiasm, merchants have grown wary of daily deal Web sites like Groupon and LivingSocial. Now consumers are starting to follow.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/227dbd0c/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=a581fa08ebdb4535643213d1d5dda9f5&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=a581fa08ebdb4535643213d1d5dda9f5&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">LivingSocial.com</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Yelp|YELP|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Google Inc|GOOG|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Shopping and Retail</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Portland (Ore)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Coupons</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Facebook Inc|FB|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Small Business</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Consumer Behavior</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Groupon Inc|GRPN|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">comScore Inc|SCOR|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Computers and the Internet</category>
+			<pubDate>Mon, 20 Aug 2012 22:10:00 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/18/technology/merchants-and-shoppers-sour-on-daily-deal-sites-like-groupon.html</guid>
+			<dc:creator>By STEPHANIE CLIFFORD and CLAIRE CAIN MILLER</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/18/world/asia/panic-radiates-from-indian-state-of-assam.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Panic Radiates From Indian State of Assam</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=ddaed569b0a98315a0316726d3ea4054</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/18/world/asia/panic-radiates-from-indian-state-of-assam.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>What began as a vicious if obscure fight over land and power between Muslims and an indigenous tribe in a remote state has set off panic among northeastern migrants across India.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/227dbd0f/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=ddaed569b0a98315a0316726d3ea4054&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=ddaed569b0a98315a0316726d3ea4054&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">India</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests, and Riots</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Bangalore (India)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Muslims and Islam</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Migrant Labor (Agriculture)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Pune (India)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Stations and Terminals (Passenger)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Assam State (India)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Immigration and Emigration</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Hinduism</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mumbai (India)</category>
+			<pubDate>Mon, 20 Aug 2012 21:49:06 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/18/world/asia/panic-radiates-from-indian-state-of-assam.html</guid>
+			<dc:creator>By JIM YARDLEY</dc:creator>
+			<media:credit scheme="urn:ebu">Jagadeesh Nv/European Pressphoto Agency</media:credit>
+			<media:description>People from northeastern India boarded a train bound for Guwahati, in Assam State, at a railway station in Bangalore on Thursday.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/17/world/20120818-INDIA-slide-211O/20120818-INDIA-slide-211O-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://bits.blogs.nytimes.com/2012/08/20/apple-becomes-the-most-valuable-public-company-ever-with-an-asterisk/?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Bits Blog: Apple Becomes Most Valuable Public Company Ever, With an Asterisk</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=469b1f1941b40057c88d3162047a6142</link>
+			<pheedo:origLink>http://bits.blogs.nytimes.com/2012/08/20/apple-becomes-the-most-valuable-public-company-ever-with-an-asterisk/?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>On Monday Apple became the most highly valued public company ever, but Microsoft still holds the record when its 1999 value is adjusted for inflation.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228f45f0/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=469b1f1941b40057c88d3162047a6142&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=469b1f1941b40057c88d3162047a6142&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/">apple</category>
+			<category domain="http://www.nytimes.com/namespaces/">Apple Inc</category>
+			<category domain="http://www.nytimes.com/namespaces/">Mobile</category>
+			<category domain="http://www.nytimes.com/namespaces/">Microsoft Corporation|MSFT|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/">Microsoft</category>
+			<category domain="http://www.nytimes.com/namespaces/">Stocks and Bonds</category>
+			<category domain="http://www.nytimes.com/namespaces/">Apple Inc|AAPL|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/">Microsoft Corporation</category>
+			<pubDate>Mon, 20 Aug 2012 21:40:09 GMT</pubDate>
+			<guid isPermaLink="false">http://bits.blogs.nytimes.com/2012/08/20/apple-becomes-the-most-valuable-public-company-ever-with-an-asterisk/</guid>
+			<dc:creator>By NICK WINGFIELD</dc:creator>
+			<media:credit scheme="urn:ebu">Noah Berger/Bloomberg News</media:credit>
+			<media:description/>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2011/12/10/blogs/bitpix-apple-logo1/bitpix-apple-logo1-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/20/technology/secrets-learned-in-apple-samsung-trial.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Secrets Learned in Apple-Samsung Trial</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=44738c5860d6962758c3815d1bdc21fc</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/20/technology/secrets-learned-in-apple-samsung-trial.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>The problem when companies go to trial is that the public gets to hear corporate secrets.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/2287e054/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=44738c5860d6962758c3815d1bdc21fc&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=44738c5860d6962758c3815d1bdc21fc&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Tablet Computers</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Inventions and Patents</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Microsoft Corporation|MSFT|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Samsung Group</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Apple Inc|AAPL|NASDAQ</category>
+			<pubDate>Mon, 20 Aug 2012 20:38:02 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/20/technology/secrets-learned-in-apple-samsung-trial.html</guid>
+			<dc:creator>By NICK WINGFIELD</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://bits.blogs.nytimes.com/2012/08/19/disruptions-the-next-wave-for-the-wristwatch/?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Disruptions: Disruptions: The Next Wave for the Wristwatch</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=b33d599f383273475275ecddc15f62b6</link>
+			<pheedo:origLink>http://bits.blogs.nytimes.com/2012/08/19/disruptions-the-next-wave-for-the-wristwatch/?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Instead of killing the wristwatch, the smartphone is actually rejuvenating it, and many of the top technology companies have their eyes on your wrist.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/22876506/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=b33d599f383273475275ecddc15f62b6&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=b33d599f383273475275ecddc15f62b6&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/">Jawbone Up</category>
+			<category domain="http://www.nytimes.com/namespaces/">iPhone</category>
+			<category domain="http://www.nytimes.com/namespaces/">Smartphone</category>
+			<category domain="http://www.nytimes.com/namespaces/">SONY Corporation</category>
+			<category domain="http://www.nytimes.com/namespaces/">Ideo LLC</category>
+			<category domain="http://www.nytimes.com/namespaces/">wristwatch</category>
+			<category domain="http://www.nytimes.com/namespaces/">Nike Inc</category>
+			<category domain="http://www.nytimes.com/namespaces/">Smartphones</category>
+			<category domain="http://www.nytimes.com/namespaces/">Kickstarter</category>
+			<category domain="http://www.nytimes.com/namespaces/">Android</category>
+			<category domain="http://www.nytimes.com/namespaces/">Internet</category>
+			<category domain="http://www.nytimes.com/namespaces/">Mobile Applications</category>
+			<category domain="http://www.nytimes.com/namespaces/">Disruptions</category>
+			<category domain="http://www.nytimes.com/namespaces/">watch</category>
+			<category domain="http://www.nytimes.com/namespaces/">Devices</category>
+			<category domain="http://www.nytimes.com/namespaces/">Nike fuel</category>
+			<category domain="http://www.nytimes.com/namespaces/">Wrists</category>
+			<category domain="http://www.nytimes.com/namespaces/">Watches and Clocks</category>
+			<category domain="http://www.nytimes.com/namespaces/">Pebble</category>
+			<category domain="http://www.nytimes.com/namespaces/">Sony Smartwatch</category>
+			<category domain="http://www.nytimes.com/namespaces/">Jawbone</category>
+			<pubDate>Mon, 20 Aug 2012 19:34:33 GMT</pubDate>
+			<guid isPermaLink="false">http://bits.blogs.nytimes.com/2012/08/19/disruptions-the-next-wave-for-the-wristwatch/</guid>
+			<dc:creator>By NICK BILTON</dc:creator>
+			<media:credit scheme="urn:ebu"/>
+			<media:description>The Sony Smartwatch allows people to control their phones remotely.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/20/technology/20disrupt-pic/20disrupt-pic-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/business/new-wave-of-adept-robots-is-changing-global-industry.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>The iEconomy: New Wave of Deft Robots Is Changing Global Industry</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=c7fa8c72572c09de3eedbf11ff92f6f2</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/business/new-wave-of-adept-robots-is-changing-global-industry.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>A new wave of robots is replacing workers in both manufacturing and distribution.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/22828499/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=c7fa8c72572c09de3eedbf11ff92f6f2&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=c7fa8c72572c09de3eedbf11ff92f6f2&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Koninklijke Philips Electronics N.V|PHG|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Boeing Company|BA|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Microsoft Corporation|MSFT|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Science and Technology</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Productivity</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Automobiles</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">United Parcel Service Inc|UPS|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Robots and Robotics</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Economic Conditions and Trends</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Electronics</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Kroger Company|KR|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Apple Inc|AAPL|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Factories and Manufacturing</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Labor and Jobs</category>
+			<pubDate>Mon, 20 Aug 2012 19:11:03 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/business/new-wave-of-adept-robots-is-changing-global-industry.html</guid>
+			<dc:creator>By JOHN MARKOFF</dc:creator>
+			<media:credit scheme="urn:ebu">Paul Sakuma/Associated Press</media:credit>
+			<media:description>While the many robots in auto factories typically perform only one function, in the new Tesla factory in Fremont, Calif., a robot might do up to four: welding, riveting, bonding and installing a component.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/19/business/JP-ROBOT-1/JP-ROBOT-1-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/business/electronic-scores-rank-consumers-by-potential-value.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>You for Sale: Electronic Scores Rank Consumers by Potential Value</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=d63acaff54fc9a25ee1ed9002901a86f</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/business/electronic-scores-rank-consumers-by-potential-value.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Buying-power scores, compiled from huge amounts of data, measure your potential value as a customer. But you’ll probably never learn your total.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/2282849c/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=d63acaff54fc9a25ee1ed9002901a86f&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=d63acaff54fc9a25ee1ed9002901a86f&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Google Inc|GOOG|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Shopping and Retail</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Facebook Inc|FB|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">eBureau</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Meyer, Gordy</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Online Advertising</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Personal Finances</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Consumer Behavior</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Data-Mining and Database Marketing</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">E-Commerce</category>
+			<pubDate>Mon, 20 Aug 2012 19:09:04 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/business/electronic-scores-rank-consumers-by-potential-value.html</guid>
+			<dc:creator>By NATASHA SINGER</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/jobs/sharing-too-much-information-in-the-workplace.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Preoccupations: Sharing Too Much Information in the Workplace</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=09211933711a1b703c667e96f2d2683e</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/jobs/sharing-too-much-information-in-the-workplace.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Whether recounting drunken exploits or their searches for new jobs, 20-somethings and others may offer too much information in the workplace.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228284a2/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=09211933711a1b703c667e96f2d2683e&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=09211933711a1b703c667e96f2d2683e&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Facebook Inc|FB|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Social Networking (Internet)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Workplace Environment</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Labor and Jobs</category>
+			<pubDate>Mon, 20 Aug 2012 19:00:06 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/jobs/sharing-too-much-information-in-the-workplace.html</guid>
+			<dc:creator>By PEGGY KLAUS</dc:creator>
+			<media:credit scheme="urn:ebu">Koren Shadmi</media:credit>
+			<media:description/>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/19/business/19-PRE/19-PRE-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/20/world/europe/assange-casts-himself-as-persecuted-whistle-blower.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Assange Accuses U.S. of ‘Witch Hunt’ Against WikiLeaks</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=6af9257cfbd31d32bc390b05fccd4066</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/20/world/europe/assange-casts-himself-as-persecuted-whistle-blower.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Julian Assange, the founder of WikiLeaks, took to the balcony of Ecuador’s embassy in London to condemn the United States government.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/22868f13/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=6af9257cfbd31d32bc390b05fccd4066&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=6af9257cfbd31d32bc390b05fccd4066&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Ecuador</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Wikileaks</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Diplomatic Service, Embassies and Consulates</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Asylum, Right of</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Whistle-Blowers</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">London (England)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Assange, Julian P</category>
+			<pubDate>Mon, 20 Aug 2012 18:20:09 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/20/world/europe/assange-casts-himself-as-persecuted-whistle-blower.html</guid>
+			<dc:creator>By RAVI SOMAIYA</dc:creator>
+			<media:credit scheme="urn:ebu">Facundo Arrizabalaga/European Pressphoto Agency</media:credit>
+			<media:description>Julian Assange spoke from a balcony at the Ecuadoran embassy in London on Sunday.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/20/world/europe/20assange_1/20assange_1-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/20/technology/coming-next-doctors-prescribing-apps-to-patients.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Coming Next: Doctors Prescribing Apps to Patients</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=e36b12defb26abe9e7ac80a2e800799c</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/20/technology/coming-next-doctors-prescribing-apps-to-patients.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Apps that can assess data like blood glucose levels, diet and drug regimen — and can be reimbursed by insurance — will soon be prescribed by doctors to help treat patients.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/2287e055/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=e36b12defb26abe9e7ac80a2e800799c&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=e36b12defb26abe9e7ac80a2e800799c&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Doctors</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Medical Devices</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Health Insurance and Managed Care</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Greater New York Hospital Assn</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Mobile Applications</category>
+			<pubDate>Mon, 20 Aug 2012 16:00:03 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/20/technology/coming-next-doctors-prescribing-apps-to-patients.html</guid>
+			<dc:creator>By JOSHUA BRUSTEIN</dc:creator>
+			<media:credit scheme="urn:ebu">Steve Ruark for The New York Times</media:credit>
+			<media:description>Anand K. Iyer, president of WellDoc, which is marketing the DiabetesManager app.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/20/business/alt-jp20apps1/alt-jp20apps1-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/20/technology/samsung-and-apple-fail-to-agree-out-of-court.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Verdict in Apple-Samsung Trial May Echo Through Tech Industry</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=1be2e1b8db01bb638af829c7a4b6e30f</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/20/technology/samsung-and-apple-fail-to-agree-out-of-court.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>If Apple prevails in its legal dogfight with Samsung over patents, experts believe its rivals will have a stronger incentive to distinguish their smartphone and tablet products.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/2286b47d/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=1be2e1b8db01bb638af829c7a4b6e30f&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=1be2e1b8db01bb638af829c7a4b6e30f&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">iPhone</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Inventions and Patents</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Smartphones</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Samsung Electronics Co</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Suits and Litigation</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Apple Inc|AAPL|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Koh, Lucy H</category>
+			<pubDate>Mon, 20 Aug 2012 15:40:04 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/20/technology/samsung-and-apple-fail-to-agree-out-of-court.html</guid>
+			<dc:creator>By NICK WINGFIELD</dc:creator>
+			<media:credit scheme="urn:ebu">Reuters</media:credit>
+			<media:description>Samsung's tablet and Apple's iPad are compared in this evidence image presented during the trial between the two companies over patents.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/20/business/jp20apple/jp20apple-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/nyregion/spinlister-and-social-bicycles-develop-bike-sharing-alternatives.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>App City: Spinlister and Social Bicycles Develop Bike-Sharing Alternatives</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=b6bef07e42b8c89c814e49a0326cbb1e</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/nyregion/spinlister-and-social-bicycles-develop-bike-sharing-alternatives.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>New York’s Citi Bike program has been delayed, but two Web-based start-ups are working on alternatives to Citi Bike.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/2282ffec/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=b6bef07e42b8c89c814e49a0326cbb1e&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=b6bef07e42b8c89c814e49a0326cbb1e&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New York City</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Bicycles and Bicycling</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Mobile Applications</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Citi Bike</category>
+			<pubDate>Mon, 20 Aug 2012 14:47:21 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/nyregion/spinlister-and-social-bicycles-develop-bike-sharing-alternatives.html</guid>
+			<dc:creator>By JOSHUA BRUSTEIN</dc:creator>
+			<media:credit scheme="urn:ebu">Christoph Hitz</media:credit>
+			<media:description/>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/19/nyregion/19APPCITY/19APPCITY-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://gadgetwise.blogs.nytimes.com/2012/08/20/a-new-twist-on-an-old-phone-scam/?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Gadgetwise Blog: A New Twist on an Old Phone Swindle</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=d04621e5c0b812184e9055c095902769</link>
+			<pheedo:origLink>http://gadgetwise.blogs.nytimes.com/2012/08/20/a-new-twist-on-an-old-phone-scam/?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Swindlers may be making annoying repeat phone calls to entice people to make a return call - resulting in big phone fees.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228d486b/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=d04621e5c0b812184e9055c095902769&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=d04621e5c0b812184e9055c095902769&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/">Home Tech</category>
+			<category domain="http://www.nytimes.com/namespaces/">Fraud</category>
+			<category domain="http://www.nytimes.com/namespaces/">Frauds and Swindling</category>
+			<category domain="http://www.nytimes.com/namespaces/">Security &amp; Privacy</category>
+			<category domain="http://www.nytimes.com/namespaces/">scam</category>
+			<category domain="http://www.nytimes.com/namespaces/">Tips and How-To's</category>
+			<category domain="http://www.nytimes.com/namespaces/">Comcast Corporation</category>
+			<category domain="http://www.nytimes.com/namespaces/">Telephones and Telecommunications</category>
+			<category domain="http://www.nytimes.com/namespaces/">Comcast Corporation|CMCSA|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/">phone</category>
+			<pubDate>Mon, 20 Aug 2012 14:22:15 GMT</pubDate>
+			<guid isPermaLink="false">http://gadgetwise.blogs.nytimes.com/2012/08/20/a-new-twist-on-an-old-phone-scam/</guid>
+			<dc:creator>By ROY FURCHGOTT</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/20/technology/victor-poor-intel-computer-chip-innovator-dies-at-79.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Victor Poor, Intel Computer Chip Innovator, Dies at 79</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=15dfaecc9107f64749f2d8be9e4c194f</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/20/technology/victor-poor-intel-computer-chip-innovator-dies-at-79.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Mr. Poor, a computer engineer and amateur radio enthusiast, collaborated on development of microprocessors that propelled Intel to dominance in the computer chip industry.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/22876541/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=15dfaecc9107f64749f2d8be9e4c194f&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=15dfaecc9107f64749f2d8be9e4c194f&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Computer Chips</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">International Business Machines Corporation|IBM|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Raytheon Company|RTN|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Intel Corporation</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Computers and the Internet</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Poor, Victor Dale</category>
+			<pubDate>Mon, 20 Aug 2012 14:12:09 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/20/technology/victor-poor-intel-computer-chip-innovator-dies-at-79.html</guid>
+			<dc:creator>By JOHN MARKOFF</dc:creator>
+			<media:credit scheme="urn:ebu">Andrew Ford/Florida Today</media:credit>
+			<media:description>Victor Poor.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/21/sports/poor1/poor1-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://gadgetwise.blogs.nytimes.com/2012/08/20/tip-of-the-week-customizing-ios-notifications/?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Gadgetwise Blog: Tip of the Week: Customizing iOS Notifications</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=3d20833d244ad3749cd4202a62cd9658</link>
+			<pheedo:origLink>http://gadgetwise.blogs.nytimes.com/2012/08/20/tip-of-the-week-customizing-ios-notifications/?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>In Apple's iOS software, you can choose which apps you want to see in your Notification Center and the style of the alert messages themselves.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228be9ca/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=3d20833d244ad3749cd4202a62cd9658&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=3d20833d244ad3749cd4202a62cd9658&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/">iPad</category>
+			<category domain="http://www.nytimes.com/namespaces/">iPhone</category>
+			<category domain="http://www.nytimes.com/namespaces/">cellphones</category>
+			<category domain="http://www.nytimes.com/namespaces/">Apple Incorporated</category>
+			<category domain="http://www.nytimes.com/namespaces/">iPod</category>
+			<category domain="http://www.nytimes.com/namespaces/">iOS</category>
+			<category domain="http://www.nytimes.com/namespaces/">Mobile Applications</category>
+			<pubDate>Mon, 20 Aug 2012 11:34:36 GMT</pubDate>
+			<guid isPermaLink="false">http://gadgetwise.blogs.nytimes.com/2012/08/20/tip-of-the-week-customizing-ios-notifications/</guid>
+			<dc:creator>By J.D. BIERSDORFER</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://bits.blogs.nytimes.com/2012/08/16/square-offers-flat-rate-plan-for-small-businesses/?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Bits Blog: Square Offers Flat-Rate Plan for Small Businesses</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=35f829d42b7ffa75d3129b74dbbd0869</link>
+			<pheedo:origLink>http://bits.blogs.nytimes.com/2012/08/16/square-offers-flat-rate-plan-for-small-businesses/?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Square will drop the processing fees for small businesses using its service, offering a flat-rate plan in an effort to entice more of them to sign up.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228d950e/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=35f829d42b7ffa75d3129b74dbbd0869&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=35f829d42b7ffa75d3129b74dbbd0869&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/">Square</category>
+			<category domain="http://www.nytimes.com/namespaces/">Mobile</category>
+			<category domain="http://www.nytimes.com/namespaces/">Square Inc</category>
+			<category domain="http://www.nytimes.com/namespaces/">Mobile Commerce</category>
+			<pubDate>Sun, 19 Aug 2012 22:02:28 GMT</pubDate>
+			<guid isPermaLink="false">http://bits.blogs.nytimes.com/2012/08/16/square-offers-flat-rate-plan-for-small-businesses/</guid>
+			<dc:creator>By JENNA WORTHAM</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://bits.blogs.nytimes.com/2012/08/18/judge-raises-new-questions-about-facebook-advertising-tactic/?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Bits Blog: Judge Raises New Questions About Facebook Advertising Tactic</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=90612230050711898dcc7a33960bddeb</link>
+			<pheedo:origLink>http://bits.blogs.nytimes.com/2012/08/18/judge-raises-new-questions-about-facebook-advertising-tactic/?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>At a time when Facebook needs to increase its revenue, a federal judge in California rejected the proposed settlement of a class-action lawsuit targeting the company's most lucrative advertising tool.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/22833315/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=90612230050711898dcc7a33960bddeb&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=90612230050711898dcc7a33960bddeb&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/">Privacy</category>
+			<category domain="http://www.nytimes.com/namespaces/">Facebook</category>
+			<category domain="http://www.nytimes.com/namespaces/">Facebook Inc|FB|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/">sponsored stories</category>
+			<category domain="http://www.nytimes.com/namespaces/">Online Advertising</category>
+			<category domain="http://www.nytimes.com/namespaces/">Social Networking (Internet)</category>
+			<category domain="http://www.nytimes.com/namespaces/">Suits and Litigation</category>
+			<category domain="http://www.nytimes.com/namespaces/">California</category>
+			<category domain="http://www.nytimes.com/namespaces/">Facebook Inc</category>
+			<pubDate>Sun, 19 Aug 2012 17:25:45 GMT</pubDate>
+			<guid isPermaLink="false">http://bits.blogs.nytimes.com/2012/08/18/judge-raises-new-questions-about-facebook-advertising-tactic/</guid>
+			<dc:creator>By SOMINI SENGUPTA</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/nyregion/the-watchmens-misdirected-gaze.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Big City: The Watchmen’s Misdirected Gaze</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=4d927119cd42bb58a0a27ee43a404239</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/nyregion/the-watchmens-misdirected-gaze.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Surveillance cameras are omnipresent in the post 9/11 world, but they have been focused least on where they are needed most: high-crime areas.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/2282ffea/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=4d927119cd42bb58a0a27ee43a404239&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=4d927119cd42bb58a0a27ee43a404239&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">New York Civil Liberties Union</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New York City</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Microsoft Corporation|MSFT|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">CBS Corporation|CBS|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Security and Warning Systems</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Police Department (NYC)</category>
+			<pubDate>Sun, 19 Aug 2012 10:19:04 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/nyregion/the-watchmens-misdirected-gaze.html</guid>
+			<dc:creator>By GINIA BELLAFANTE</dc:creator>
+			<media:credit scheme="urn:ebu">Justin Lane/European Pressphoto Agency</media:credit>
+			<media:description>Mayor Michael R. Bloomberg introduced a citywide security system earlier this month.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/19/nyregion/19BIG_SPAN/19BIG_SPAN-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/world/europe/julian-assange-under-watch-at-ecuadorean-embassy.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Julian Assange Under Watch at Ecuadorean Embassy</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=255a4e7cab8ccbb7376e378a904ff351</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/world/europe/julian-assange-under-watch-at-ecuadorean-embassy.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Officers in London who have been ordered to prevent Julian Assange, the fugitive WikiLeaks founder, from leaving the country have had him under constant surveillance.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228286b8/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=255a4e7cab8ccbb7376e378a904ff351&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=255a4e7cab8ccbb7376e378a904ff351&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Diplomatic Service, Embassies and Consulates</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Police</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/mdes">Extradition</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Quito (Ecuador)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Assange, Julian P</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+			<pubDate>Sun, 19 Aug 2012 05:35:12 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/world/europe/julian-assange-under-watch-at-ecuadorean-embassy.html</guid>
+			<dc:creator>By JOHN F. BURNS and RAVI SOMAIYA</dc:creator>
+			<media:credit scheme="urn:ebu">Will Oliver/Agence France-Presse — Getty Images</media:credit>
+			<media:description>To prevent Julian Assange from fleeing, police officers kept watch outside the Ecuadorean Embassy in London on Friday.</media:description>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/19/world/assang1/assang1-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/your-money/dividend-paying-stocks-found-in-unusual-places.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Fundamentally: Dividend-Paying Stocks, Found in Unusual Places</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=eb1597f8dcde5dd129b28cbaab3ea22f</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/your-money/dividend-paying-stocks-found-in-unusual-places.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>Utility and telecommunications stocks are the traditional dividend payers, but investors now have other places to turn for income, including technology stocks.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228284a5/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=eb1597f8dcde5dd129b28cbaab3ea22f&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=eb1597f8dcde5dd129b28cbaab3ea22f&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Google Inc|GOOG|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Intel</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Microsoft Corporation|MSFT|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">International Business Machines Corporation|IBM|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Dow Jones &amp; Co|DJ|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Westwood Holdings Group Inc|WHG|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Stocks and Bonds</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Mutual Funds</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Deere &amp; Company|DE|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Cardinal Health Inc|CAH|NYSE</category>
+			<pubDate>Sun, 19 Aug 2012 03:00:02 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/your-money/dividend-paying-stocks-found-in-unusual-places.html</guid>
+			<dc:creator>By PAUL J. LIM</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/your-money/samsung-and-a-readers-printer-problem-the-haggler.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>The Haggler: Samsung and a Reader’s Printer Problem — the Haggler</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=a47f8457cfc81fdc06af9d69a11cdb28</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/your-money/samsung-and-a-readers-printer-problem-the-haggler.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>A reader seeks the Haggler’s aid in solving a problem with a Samsung printer. But the Haggler then finds his own problem in trying to deal with an “anonymous spokesperson” for the company.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/228284a0/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=a47f8457cfc81fdc06af9d69a11cdb28&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=a47f8457cfc81fdc06af9d69a11cdb28&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Public Relations and Publicity</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Customer Relations</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Hewlett-Packard Company|HPQ|NYSE</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Samsung Group</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Computer Printers</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Computers and the Internet</category>
+			<pubDate>Sun, 19 Aug 2012 02:57:27 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/your-money/samsung-and-a-readers-printer-problem-the-haggler.html</guid>
+			<dc:creator>By DAVID SEGAL</dc:creator>
+			<media:credit scheme="urn:ebu">Christoph Hitz</media:credit>
+			<media:description/>
+			<media:content height="75" lang="" width="75" url="http://graphics8.nytimes.com/images/2012/08/19/business/0819BIZHAGGLER/0819BIZHAGGLER-thumbStandard.jpg"/>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/19/nyregion/missed-connections-poetry-on-craigslist.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Poetic Connections | Facebook: Missed Connections Poetry on Craigslist</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=005dff4e8ada1f20ac0e01f8afefb86e</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/19/nyregion/missed-connections-poetry-on-craigslist.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>When future scholars data-mine the Internet for a digital literature of romance, they are sure to find all of its aspects on Facebook.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/2282ffee/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=005dff4e8ada1f20ac0e01f8afefb86e&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=005dff4e8ada1f20ac0e01f8afefb86e&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Facebook Inc|FB|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Craigslist</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Social Networking (Internet)</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Poetry and Poets</category>
+			<pubDate>Sun, 19 Aug 2012 02:40:07 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/19/nyregion/missed-connections-poetry-on-craigslist.html</guid>
+			<dc:creator>By ALAN FEUER</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://bits.blogs.nytimes.com/2012/08/17/twitter-changes-incite-online-protests/?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>Bits Blog: Twitter Changes Lead to Online Protests</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=65f1e1f4cdfae7a21fdc6de86412ee73</link>
+			<pheedo:origLink>http://bits.blogs.nytimes.com/2012/08/17/twitter-changes-incite-online-protests/?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>After Twitter imposed stricter rules for third-party apps on Thursday, engineers and developers picked up their pitchforks and took to Twitter and blogs to decry what some likened to a "bait and switch."&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/227d4341/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=65f1e1f4cdfae7a21fdc6de86412ee73&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=65f1e1f4cdfae7a21fdc6de86412ee73&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/">Facebook</category>
+			<category domain="http://www.nytimes.com/namespaces/">Social</category>
+			<category domain="http://www.nytimes.com/namespaces/">Start-ups</category>
+			<category domain="http://www.nytimes.com/namespaces/">Blogs and Blogging (Internet)</category>
+			<category domain="http://www.nytimes.com/namespaces/">Social Networking (Internet)</category>
+			<category domain="http://www.nytimes.com/namespaces/">Apps</category>
+			<category domain="http://www.nytimes.com/namespaces/">Twitter</category>
+			<category domain="http://www.nytimes.com/namespaces/">A.P.I.</category>
+			<category domain="http://www.nytimes.com/namespaces/">Developers</category>
+			<pubDate>Sun, 19 Aug 2012 00:37:20 GMT</pubDate>
+			<guid isPermaLink="false">http://bits.blogs.nytimes.com/2012/08/17/twitter-changes-incite-online-protests/</guid>
+			<dc:creator>By NICOLE PERLROTH and NICK BILTON</dc:creator>
+		</item>
+		<item>
+			<atom:link href="http://www.nytimes.com/2012/08/18/us/ipad-stolen-from-home-of-steve-jobs-is-found-in-clowns-hands.html?partner=rss&amp;emc=rss" rel="standout"/>
+			<title>National Briefing | West: Ipad Stolen From Home of Steve Jobs Is Found in Clown’s Hands</title>
+			<link>http://feeds.nytimes.com/click.phdo?i=4fffedd9d96c0c61af79e271f7cf70b3</link>
+			<pheedo:origLink>http://www.nytimes.com/2012/08/18/us/ipad-stolen-from-home-of-steve-jobs-is-found-in-clowns-hands.html?partner=rss&amp;amp;emc=rss</pheedo:origLink>
+			<description>A professional clown who played music on an iPad as he made balloon animals said on Friday that he had no idea his friend had snatched the tablet from the home of Steve Jobs.&lt;img width='1' height='1' src='http://rss.nytimes.com/c/34625/f/640387/s/227dbd11/mf.gif' border='0'/&gt;&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://ads.pheedo.com/click.phdo?s=4fffedd9d96c0c61af79e271f7cf70b3&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://ads.pheedo.com/img.phdo?s=4fffedd9d96c0c61af79e271f7cf70b3&amp;p=1&quot;/&gt;&lt;/a&gt;
+</description>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">iPad</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Jobs, Steven P</category>
+			<category domain="http://www.nytimes.com/namespaces/nyt_org_all">Apple Inc|AAPL|NASDAQ</category>
+			<category domain="http://www.nytimes.com/namespaces/keywords/des">Robberies and Thefts</category>
+			<pubDate>Sat, 18 Aug 2012 05:48:15 GMT</pubDate>
+			<guid isPermaLink="false">http://www.nytimes.com/2012/08/18/us/ipad-stolen-from-home-of-steve-jobs-is-found-in-clowns-hands.html</guid>
+			<dc:creator>By THE ASSOCIATED PRESS</dc:creator>
+		</item>
+	</channel>
+</rss>
