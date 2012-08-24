@@ -1,7 +1,15 @@
 $(document).ready(function() {
   $("#form").bind('submit',function(){
-    filter_feed_regex($("#keyword").val());
-    filter_feed_xquery($("#keyword").val());
+    var $keyword = $('#keyword');
+    $keyword.addClass('working');
+    $('#regex_table tbody').html('');
+    $('#xquery_table tbody').html('');
+    var kw = $keyword.val();
+    if ($keyword.val() != '') {
+	    filter_feed_regex(kw);
+	    filter_feed_xquery(kw);
+    }
+    $keyword.removeClass('working');
     return false;
   });
 });

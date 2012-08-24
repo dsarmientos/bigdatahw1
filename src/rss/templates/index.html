@@ -14,6 +14,7 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      .working { background:url('/media/img/indicator.gif') no-repeat right center }
     </style>
     <link href="/media/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -51,7 +52,9 @@
 	  <form id="form" class="well">
 	  <label>Filtro</label>
 	  <input id="keyword" type="text" class="span3" placeholder="Palabras clave ">
-	  <span class="help-block">Se mostrarán todos los mensajes que contienen la palabra clave en el título, en la descripción o en las categorías del post.</span>
+	  <ul><li>
+		  <span class="help-block"><strong>Filtro Regex:</strong> Se mostrarán todos los mensajes que contienen la palabra clave en el título, en la descripción o en las categorías del post.</span></li>
+		  <li><span class="help-block"><strong>Filtro XQuery:</strong> Se mostrarán todos los mensajes que contienen la palabra clave en el título o en la descripción del post.</span></li></ul>
 </form>
       </div>
 </div>

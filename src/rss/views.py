@@ -12,7 +12,6 @@ sys.path.insert(0, '/home/daniel/Desktop/zorba-2.5.0/build/swig/python')
 import zorba_api
 
 
-
 def home(request):
     titles = []
     parsed_feeds = get_parsed_feeds()
@@ -20,13 +19,7 @@ def home(request):
         titles.extend(
             map(lambda n: '%s' % n['title'],
                 feed['items']))
-    return render_to_response('index.html', {'titulos':titles})
-
-    feeds_xml = get_feeds_xml()
-    parsed_feeds = []
-    for feed_xml in feeds_xml:
-        parsed_feeds.append(feedparser.parse(feed_xml))
-    return parsed_feeds
+    return render_to_response('index.html', {'titulos': titles})
 
 
 def get_parsed_feeds():
@@ -44,9 +37,9 @@ def filtro_regex(request):
     filter_regex = r'(<title>[^<]*?%(keyword)s[^<]*?</title>|' \
                    '<description>[^<]*?%(keyword)s[^<]*?</description>|' \
                    '<category[^>]*?>[^<]*?%(keyword)s[^<]*?</category>)' % (
-                   {'keyword':keyword})
-    keyword_filter = re.compile(filter_regex, re.DOTALL|re.IGNORECASE)
-    item_regex = re.compile(r'<item>(?P<item>.*?)</item>',re.DOTALL)
+                   {'keyword': keyword})
+    keyword_filter = re.compile(filter_regex, re.DOTALL | re.IGNORECASE)
+    item_regex = re.compile(r'<item>(?P<item>.*?)</item>', re.DOTALL)
     titles = []
     for feed_xml in get_feeds_xml():
         for match in item_regex.finditer(feed_xml):
@@ -61,41 +54,52 @@ def filtro_regex(request):
 def filtro_xquery(request):
     if request.method != 'GET' or 'q'not in request.GET:
         return HttpResponseBadRequest()
-    store = zorba_api.InMemoryStore_getInstance()
-    zorba = zorba_api.Zorba_getInstance(store)
-
-    keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace')
+    zorba, store, dataManager, docManager = init_zorba()
+    keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace').lower()
+    xquery = build_xquery(zorba, keyword)
     results = []
-    xml_ = join_feeds_xml(get_feeds_xml())
-    for xml in [xml_]:
-        dataManager = zorba.getXmlDataManager()
-        docIter = dataManager.parseXML(xml)
-        docIter.open();
-        doc = zorba_api.Item_createEmptyItem()
-        docIter.next(doc)
-        docIter.close()
-        docIter.destroy()
-        query = r'for $item in doc("rss.xml")//item ' \
-            'return <tr><td>{data($item/title)}</td>' \
-            '<td>{data($item/pubDate)}</td><td>' \
-            '<a href="{data($item/link)}">Ver</a></td></tr>'
-        xquery = zorba.compileQuery(query)
-        docManager = dataManager.getDocumentManager()
-        docManager.put("rss.xml", doc)
+    for xml in get_feeds_xml():
+        docManager.put("rss.xml", build_doc(dataManager, xml))
         results.append(xquery.execute())
-    zorba.shutdown()
-    zorba_api.InMemoryStore_shutdown(store)
-    print results
-
+        docManager.remove("rss.xml")
+    shutdown_zorba(zorba, store)
     return HttpResponse(results, mimetype='text/html')
 
 
-def join_feeds_xml(feeds_xml):
-    with open(
-        '/home/daniel/Documents/big_data/tarea1/src/rss/jrss.xml',
-        'r') as infile:
-        return infile.read()
+def init_zorba():
+    store = zorba_api.InMemoryStore_getInstance()
+    zorba = zorba_api.Zorba_getInstance(store)
+    dataManager = zorba.getXmlDataManager()
+    docManager = dataManager.getDocumentManager()
+    return zorba, store, dataManager, docManager
 
+
+def build_xquery(zorba, keyword):
+    # contains($item/category, "%(kw)s") does not work: more than one category
+    query = r'for $item in doc("rss.xml")//item ' \
+            'let $title := lower-case($item/title) ' \
+            'where contains($title, "%(kw)s") or ' \
+            'contains($item/description, "%(kw)s") ' \
+            'return <tr><td>{data($item/title)}</td>' \
+            '<td>{data($item/pubDate)}</td><td>' \
+            '<a href="{data($item/link)}">Ver</a>' \
+            '</td></tr>' % {'kw': keyword}
+    return zorba.compileQuery(query)
+
+
+def build_doc(dataManager, xml):
+    docIter = dataManager.parseXML(xml)
+    docIter.open()
+    doc = zorba_api.Item_createEmptyItem()
+    docIter.next(doc)
+    docIter.close()
+    docIter.destroy()
+    return doc
+
+
+def shutdown_zorba(zorba, store):
+    zorba.shutdown()
+    zorba_api.InMemoryStore_shutdown(store)
 
 
 def get_feeds_xml():
@@ -118,5 +122,3 @@ def get_feed_xml(feed_url):
     xml = feed.read()
     feed.close()
     return xml
-
-
