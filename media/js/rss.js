@@ -1,40 +1,58 @@
 $(document).ready(function() {
-  $("#form").bind('submit',function(){
-    var $keyword = $('#keyword');
-    $keyword.addClass('working');
-    $('#regex_table tbody').html('');
-    $('#xquery_table tbody').html('');
-    var kw = $keyword.val();
-    if ($keyword.val() != '') {
-	    filter_feed_regex(kw);
-	    filter_feed_xquery(kw);
-    }
-    $keyword.removeClass('working');
-    return false;
-  });
+    configurar_formulario_filtro();
+    conectar_indicador_actividad();
+    $('#keyword').focus()
 });
 
 
-function filter_feed_regex(keyword) {
-  $.getJSON('http://127.0.0.1:8000/filtro_regex/?', {'q':keyword}, function(data) {
-    var items = [];
-    var titles = data.titles
-    $.each(titles, function(index) {
-      items.push('<tr><td>' + titles[index] + '</td></tr>');
+function configurar_formulario_filtro() {
+    $("#form").bind('submit',function(){
+        var $keyword = $('#keyword');
+        limpiar_filtros();
+        if ($.trim($keyword.val()).length != 0) {
+            actualizar_filtros($keyword.val());
+        }
+        return false;
     });
-    $('#regex_table tbody').html(items.join(''));
-});
 }
 
 
-function filter_feed_xquery(keyword) {
-  $.get('http://127.0.0.1:8000/filtro_xquery/?', {'q':keyword}, function(data) {
-    /*var items = [];
-    var news = data.news
-    $.each(news, function(index) {
-      items.push(news[index])
+function conectar_indicador_actividad() {
+    $(document).ajaxStart(function() {
+        $('#keyword').addClass('working');
     });
-    */
-    $('#xquery_table tbody').html(data);
-});
+    $(document).ajaxStop(function() {
+        $('#keyword').removeClass('working');
+    });
+}
+
+
+function limpiar_filtros() {
+    $('#regex_table tbody').html('');
+    $('#xquery_table tbody').html('');
+}
+
+
+function actualizar_filtros(keyword) {
+    actualizar_filtro_regex(keyword);
+    actualizar_filtro_xquery(keyword);
+}
+
+
+function actualizar_filtro_regex(keyword) {
+    $.getJSON('http://127.0.0.1:8000/filtro_regex/?', {'q':keyword}, function(data) {
+        var items = [];
+        var titles = data.titles
+        $.each(titles, function(index) {
+            items.push('<tr><td>' + titles[index] + '</td></tr>');
+        });
+        $('#regex_table tbody').html(items.join(''));
+    });
+}
+
+
+function actualizar_filtro_xquery(keyword) {
+    $.get('http://127.0.0.1:8000/filtro_xquery/?', {'q':keyword}, function(data) {
+        $('#xquery_table tbody').html(data);
+    });
 }

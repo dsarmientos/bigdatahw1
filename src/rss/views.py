@@ -16,8 +16,7 @@ def home(request):
     titles = []
     parsed_feeds = get_parsed_feeds()
     for feed in parsed_feeds:
-        titles.extend(
-        ['%s' % item['title'] for item in feed['items']])
+        titles.extend(['%s' % item['title'] for item in feed['items']])
     return render_to_response('index.html', {'titulos': titles})
 
 
@@ -25,18 +24,14 @@ def filtro_regex(request):
     if request.method != 'GET' or 'q'not in request.GET:
         return HttpResponseBadRequest()
     keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace')
-    filter_regex = r'(<title>[^<]*?%(keyword)s[^<]*?</title>|' \
-                   '<description>[^<]*?%(keyword)s[^<]*?</description>|' \
-                   '<category[^>]*?>[^<]*?%(keyword)s[^<]*?</category>)' % (
-                   {'keyword': keyword})
-    keyword_filter = re.compile(filter_regex, re.DOTALL | re.IGNORECASE)
-    item_regex = re.compile(r'<item>(?P<item>.*?)</item>', re.DOTALL)
+    filter_regex = build_filter_regex(keyword)
+    item_regex = re.compile('<item>(?P<item>.*?)</item>', re.DOTALL)
     titles = []
     for feed_xml in get_feeds_xml():
         for match in item_regex.finditer(feed_xml):
             item_xml = match.group('item')
-            if keyword_filter.search(item_xml) is not None:
-                title = re.search(r'<title>(.*?)</title>', item_xml).group(1)
+            if filter_regex.search(item_xml) is not None:
+                title = re.search('<title>(.*?)</title>', item_xml).group(1)
                 titles.append(title)
     return HttpResponse(simplejson.dumps({'titles': titles}),
                         mimetype='application/json')
@@ -56,53 +51,13 @@ def filtro_xquery(request):
     shutdown_zorba(zorba, store)
     return HttpResponse(results, mimetype='text/html')
 
+
 def get_parsed_feeds():
     feeds_xml = get_feeds_xml()
     parsed_feeds = []
     for feed_xml in feeds_xml:
         parsed_feeds.append(feedparser.parse(feed_xml))
     return parsed_feeds
-
-
-def init_zorba():
-    store = zorba_api.InMemoryStore_getInstance()
-    zorba = zorba_api.Zorba_getInstance(store)
-    data_manager = zorba.getXmlDataManager()
-    doc_manager = data_manager.getDocumentManager()
-    return zorba, store, data_manager, doc_manager
-
-
-def build_xquery(zorba, keyword):
-    # contains($item/category, "%(kw)s") does not work: more than one category
-    query = (
-        'for $item in doc("rss.xml")//item '
-        'let $title := lower-case($item/title) '
-        'let $description := lower-case($item/description) '
-        'where contains($title, "%(kw)s") or '
-          'contains($description, "%(kw)s") or '
-          'some $category in $item/category '
-            'satisfies contains($category, lower-case("%(kw)s")) '
-        'return <tr>'
-          '<td>{data($item/title)}</td>'
-          '<td>{data($item/pubDate)}</td>'
-          '<td><a href="{data($item/link)}">Ver</a></td>'
-        '</tr>') % {'kw': keyword}
-    return zorba.compileQuery(query)
-
-
-def build_doc(data_manager, xml):
-    doc_iter = data_manager.parseXML(xml)
-    doc_iter.open()
-    doc = zorba_api.Item_createEmptyItem()
-    doc_iter.next(doc)
-    doc_iter.close()
-    doc_iter.destroy()
-    return doc
-
-
-def shutdown_zorba(zorba, store):
-    zorba.shutdown()
-    zorba_api.InMemoryStore_shutdown(store)
 
 
 def get_feeds_xml():
@@ -125,3 +80,50 @@ def get_feed_xml(feed_url):
     xml = feed.read()
     feed.close()
     return xml
+
+
+def build_filter_regex(keyword):
+    filter_regex = (
+        '(<title>[^<]*?%(keyword)s[^<]*?</title>|'
+        '<description>[^<]*?%(keyword)s[^<]*?</description>|'
+        '<category[^>]*?>[^<]*?%(keyword)s[^<]*?</category>)') % (
+            {'keyword': re.escape(keyword)})
+    return re.compile(filter_regex, re.DOTALL | re.IGNORECASE)
+
+
+def init_zorba():
+    store = zorba_api.InMemoryStore_getInstance()
+    zorba = zorba_api.Zorba_getInstance(store)
+    data_manager = zorba.getXmlDataManager()
+    doc_manager = data_manager.getDocumentManager()
+    return zorba, store, data_manager, doc_manager
+
+
+def build_xquery(zorba, keyword):
+    query = (
+        'for $item in doc("rss.xml")//item '
+        'let $title := lower-case($item/title) '
+        'let $description := lower-case($item/description) '
+        'where contains($title, "%(kw)s") or '
+            'contains($description, "%(kw)s") '
+        'return <tr>'
+            '<td>{data($item/title)}</td>'
+            '<td>{data($item/pubDate)}</td>'
+            '<td><a href="{data($item/link)}">Ver</a></td>'
+        '</tr>') % {'kw': keyword}
+    return zorba.compileQuery(query)
+
+
+def build_doc(data_manager, xml):
+    doc_iter = data_manager.parseXML(xml)
+    doc_iter.open()
+    doc = zorba_api.Item_createEmptyItem()
+    doc_iter.next(doc)
+    doc_iter.close()
+    doc_iter.destroy()
+    return doc
+
+
+def shutdown_zorba(zorba, store):
+    zorba.shutdown()
+    zorba_api.InMemoryStore_shutdown(store)
