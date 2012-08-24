@@ -3,14 +3,19 @@ import re
 import sys
 import urllib2
 
+import simplexquery as sxq
 from django.core.cache import cache
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.utils import simplejson
 from django.shortcuts import render_to_response
 
-sys.path.insert(0, '/home/daniel/Desktop/zorba-2.5.0/build/swig/python')
-import zorba_api
-
+class Resolver(object):
+    def __init__(self, xml):
+        self.xml = xml.decode('latin-1')
+    def __call__(self, uri):
+        print(uri)
+        return self.xml.encode('ascii', 'xmlcharrefreplace')
+    pass
 
 def home(request):
     titles = []
@@ -23,7 +28,7 @@ def home(request):
 def filtro_regex(request):
     if request.method != 'GET' or 'q'not in request.GET:
         return HttpResponseBadRequest()
-    keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace')
+    keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace').lower()
     filter_regex = build_filter_regex(keyword)
     item_regex = re.compile('<item>(?P<item>.*?)</item>', re.DOTALL)
     titles = []
@@ -40,15 +45,13 @@ def filtro_regex(request):
 def filtro_xquery(request):
     if request.method != 'GET' or 'q'not in request.GET:
         return HttpResponseBadRequest()
-    zorba, store, data_manager, doc_manager = init_zorba()
     keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace').lower()
-    xquery = build_xquery(zorba, keyword)
+    xquery = build_xquery(keyword)
     results = []
     for xml in get_feeds_xml():
-        doc_manager.put("rss.xml", build_doc(data_manager, xml))
-        results.append(xquery.execute())
-        doc_manager.remove("rss.xml")
-    shutdown_zorba(zorba, store)
+        result = sxq.execute_all(xquery, resolver=Resolver(xml))
+        if result:
+            results.append(result[0].encode('ascii', 'xmlcharrefreplace'))
     return HttpResponse(results, mimetype='text/html')
 
 
@@ -99,19 +102,21 @@ def init_zorba():
     return zorba, store, data_manager, doc_manager
 
 
-def build_xquery(zorba, keyword):
+def build_xquery(keyword):
     query = (
         'for $item in doc("rss.xml")//item '
         'let $title := lower-case($item/title) '
         'let $description := lower-case($item/description) '
-        'where contains($title, "%(kw)s") or '
-            'contains($description, "%(kw)s") '
+        'where some $category in $item/category '
+              'satisfies contains(lower-case($category), "%(kw)s") or '
+              'contains($description, "%(kw)s") or '
+              'contains($title, "%(kw)s") '
         'return <tr>'
             '<td>{data($item/title)}</td>'
             '<td>{data($item/pubDate)}</td>'
             '<td><a href="{data($item/link)}">Ver</a></td>'
         '</tr>') % {'kw': keyword}
-    return zorba.compileQuery(query)
+    return query
 
 
 def build_doc(data_manager, xml):
