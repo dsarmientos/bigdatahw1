@@ -1,27 +1,17 @@
-#encoding=utf-8
-
-import chardet
 import feedparser
 import re
-import sys
 import urllib2
-import pdb
-import HTMLParser
 
-import simplexquery as sxq
+import simplexquery
 from django.core.cache import cache
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.utils import simplejson
 from django.shortcuts import render_to_response
 
+
 class Resolver(object):
     def __init__(self, xml):
-        encoding = chardet.detect(xml)['encoding']
-        print encoding
-        if encoding != 'utf-8':
-            encoding = 'iso8859-1'
-        uxml = xml.decode(encoding)
-        self.xml = uxml
+        self.xml = decode_xml(xml)
 
     def __call__(self, uri):
         return self.xml.encode('ascii', 'xmlcharrefreplace')
@@ -31,7 +21,7 @@ def home(request):
     titles = []
     parsed_feeds = get_parsed_feeds()
     for feed in parsed_feeds:
-        titles.extend(['%s' % item['title'] for item in feed['items']])
+        titles.extend([item['title'] for item in feed['items']])
     return render_to_response('index.html', {'titulos': titles})
 
 
@@ -39,20 +29,15 @@ def filtro_regex(request):
     if request.method != 'GET' or 'q'not in request.GET:
         return HttpResponseBadRequest()
     keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace')
-    print keyword
     filter_regex = build_filter_regex(keyword)
     item_regex = re.compile('<item>(?P<item>.*?)</item>', re.DOTALL)
     title_regex = re.compile('<title>(.*?)</title>')
     titles = []
     for feed_xml in get_feeds_xml():
-        encoding = chardet.detect(feed_xml)['encoding']
-        if encoding != 'utf-8':
-            encoding = 'iso8859-1'
         for match in item_regex.finditer(feed_xml):
             item_xml = match.group('item')
-            if filter_regex.search(item_xml) is not None:
+            if filter_regex.search(item_xml):
                 title = title_regex.search(item_xml).group(1)
-                title = title.decode(encoding).encode('utf-8')
                 titles.append(title)
     return HttpResponse(simplejson.dumps({'titles': titles}),
                         mimetype='application/json')
@@ -64,12 +49,11 @@ def filtro_xquery(request):
     keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace').lower()
     query = build_query(keyword)
     items = []
-    pp = HTMLParser.HTMLParser()
     for xml in get_feeds_xml():
-        results = sxq.execute_all(query, resolver=Resolver(xml))
+        results = simplexquery.execute_all(query, resolver=Resolver(xml))
         if results:
             items.extend(results)
-    return HttpResponse(results, mimetype='text/html')
+    return HttpResponse(items, mimetype='text/html')
 
 
 def get_parsed_feeds():
@@ -117,12 +101,22 @@ def build_query(keyword):
         'let $title := lower-case($item/title) '
         'let $description := lower-case($item/description) '
         'where contains($description, "%(kw)s") or '
-              'contains($title, "%(kw)s") or ('
-              'some $category in $item/category '
-              'satisfies contains(lower-case($category), "%(kw)s"))'
+            'contains($title, "%(kw)s") or ('
+            'some $category in $item/category '
+            'satisfies contains(lower-case($category), "%(kw)s"))'
         'return <tr>'
             '<td>{data($item/title)}</td>'
             '<td>{data($item/pubDate)}</td>'
             '<td><a href="{data($item/link)}">Ver</a></td>'
         '</tr>') % {'kw': keyword}
     return query
+
+
+def decode_xml(xml):
+    # Se deberia obtener del xml del feed, pero por simplicidad y porque
+    # se conoce la codificacion de los archivos, se hace asi:
+    try:
+        uxml = xml.decode('utf-8')
+    except UnicodeDecodeError:
+        uxml = xml.decode('iso8859-1')
+    return uxml
