@@ -1,7 +1,12 @@
+#encoding=utf-8
+
+import chardet
 import feedparser
 import re
 import sys
 import urllib2
+import pdb
+import HTMLParser
 
 import simplexquery as sxq
 from django.core.cache import cache
@@ -11,11 +16,16 @@ from django.shortcuts import render_to_response
 
 class Resolver(object):
     def __init__(self, xml):
-        self.xml = xml.decode('latin-1')
+        encoding = chardet.detect(xml)['encoding']
+        print encoding
+        if encoding != 'utf-8':
+            encoding = 'iso8859-1'
+        uxml = xml.decode(encoding)
+        self.xml = uxml
+
     def __call__(self, uri):
-        print(uri)
         return self.xml.encode('ascii', 'xmlcharrefreplace')
-    pass
+
 
 def home(request):
     titles = []
@@ -28,15 +38,21 @@ def home(request):
 def filtro_regex(request):
     if request.method != 'GET' or 'q'not in request.GET:
         return HttpResponseBadRequest()
-    keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace').lower()
+    keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace')
+    print keyword
     filter_regex = build_filter_regex(keyword)
     item_regex = re.compile('<item>(?P<item>.*?)</item>', re.DOTALL)
+    title_regex = re.compile('<title>(.*?)</title>')
     titles = []
     for feed_xml in get_feeds_xml():
+        encoding = chardet.detect(feed_xml)['encoding']
+        if encoding != 'utf-8':
+            encoding = 'iso8859-1'
         for match in item_regex.finditer(feed_xml):
             item_xml = match.group('item')
             if filter_regex.search(item_xml) is not None:
-                title = re.search('<title>(.*?)</title>', item_xml).group(1)
+                title = title_regex.search(item_xml).group(1)
+                title = title.decode(encoding).encode('utf-8')
                 titles.append(title)
     return HttpResponse(simplejson.dumps({'titles': titles}),
                         mimetype='application/json')
@@ -46,12 +62,13 @@ def filtro_xquery(request):
     if request.method != 'GET' or 'q'not in request.GET:
         return HttpResponseBadRequest()
     keyword = request.GET['q'].encode('ascii', 'xmlcharrefreplace').lower()
-    xquery = build_xquery(keyword)
-    results = []
+    query = build_query(keyword)
+    items = []
+    pp = HTMLParser.HTMLParser()
     for xml in get_feeds_xml():
-        result = sxq.execute_all(xquery, resolver=Resolver(xml))
-        if result:
-            results.append(result[0].encode('ascii', 'xmlcharrefreplace'))
+        results = sxq.execute_all(query, resolver=Resolver(xml))
+        if results:
+            items.extend(results)
     return HttpResponse(results, mimetype='text/html')
 
 
@@ -79,9 +96,9 @@ def get_feeds_xml():
 
 
 def get_feed_xml(feed_url):
-    feed = urllib2.urlopen(feed_url)
-    xml = feed.read()
-    feed.close()
+    request = urllib2.urlopen(feed_url)
+    xml = request.read()
+    request.close()
     return xml
 
 
@@ -94,41 +111,18 @@ def build_filter_regex(keyword):
     return re.compile(filter_regex, re.DOTALL | re.IGNORECASE)
 
 
-def init_zorba():
-    store = zorba_api.InMemoryStore_getInstance()
-    zorba = zorba_api.Zorba_getInstance(store)
-    data_manager = zorba.getXmlDataManager()
-    doc_manager = data_manager.getDocumentManager()
-    return zorba, store, data_manager, doc_manager
-
-
-def build_xquery(keyword):
+def build_query(keyword):
     query = (
         'for $item in doc("rss.xml")//item '
         'let $title := lower-case($item/title) '
         'let $description := lower-case($item/description) '
-        'where some $category in $item/category '
-              'satisfies contains(lower-case($category), "%(kw)s") or '
-              'contains($description, "%(kw)s") or '
-              'contains($title, "%(kw)s") '
+        'where contains($description, "%(kw)s") or '
+              'contains($title, "%(kw)s") or ('
+              'some $category in $item/category '
+              'satisfies contains(lower-case($category), "%(kw)s"))'
         'return <tr>'
             '<td>{data($item/title)}</td>'
             '<td>{data($item/pubDate)}</td>'
             '<td><a href="{data($item/link)}">Ver</a></td>'
         '</tr>') % {'kw': keyword}
     return query
-
-
-def build_doc(data_manager, xml):
-    doc_iter = data_manager.parseXML(xml)
-    doc_iter.open()
-    doc = zorba_api.Item_createEmptyItem()
-    doc_iter.next(doc)
-    doc_iter.close()
-    doc_iter.destroy()
-    return doc
-
-
-def shutdown_zorba(zorba, store):
-    zorba.shutdown()
-    zorba_api.InMemoryStore_shutdown(store)
