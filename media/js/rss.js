@@ -40,7 +40,7 @@ function actualizar_filtros(keyword) {
 
 
 function actualizar_filtro_regex(keyword) {
-    $.getJSON('http://127.0.0.1:8000/filtro_regex/?', {'q':keyword}, function(data) {
+    $.getJSON('/filtro_regex/?', {'q':keyword}, function(data) {
         var items = [];
         var titles = data.titles
         $.each(titles, function(index) {
@@ -52,7 +52,7 @@ function actualizar_filtro_regex(keyword) {
 
 
 function actualizar_filtro_xquery(keyword) {
-    $.get('http://127.0.0.1:8000/filtro_xquery/?', {'q':keyword}, function(data) {
+    $.get('/filtro_xquery/?', {'q':keyword}, function(data) {
         $('#xquery_table tbody').html(data);
     });
 }
